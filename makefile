@@ -1,6 +1,7 @@
-LDFLAGS=-ludev
+LDFLAGS = -ludev
 
 cm108: cm108.o
+	$(CC) cm108.o -o cm108 $(LDFLAGS)
 
 .PHONY: install
 install: cm108
